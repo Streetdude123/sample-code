@@ -149,7 +149,6 @@ key_for = function(user_id: number): string
 	return "Inbox_" .. user_id
 end
 
--- DataStore values arrive untyped, this is the one place that shape gets checked
 gifts_of = function(current: any): { GiftData }
 	if current and type(current.Gifts) == "table" then
 		return current.Gifts
